@@ -13,12 +13,22 @@ body {
 
 /* Footer section to stick to bottom of pages */
 main {
-    flex: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 2rem;
+}
+
+/* Main text stylings */
+.main-text {
+    max-width: 30rem;
 }
 
 footer {
     flex-shrink: 0;
     margin-bottom: 1rem;
+    margin-top: 2rem;
 }
 
 .footer-links {
@@ -26,6 +36,11 @@ footer {
     margin: 0;
     padding: 0;
     display: flex;
+}
+
+/* Filler section for pushing footer do bottom */
+.filler-section {
+    flex: 1;
 }
 
 li {
@@ -42,7 +57,16 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Set responsive margins */
+/* Styling for main photo */
+.photo-me {
+    border-radius: 5%;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    max-width: 20rem;
+    height: auto;
+}
+
+/* Set responsive css styles */
 body {
     margin: 0;
   }
@@ -51,7 +75,11 @@ body {
   @media (min-width: 1200px) {
     body {
       height: 100%;
-      margin: 0 200px;
+      margin: 0 150px;
+    }
+
+    .photo-me {
+        margin-left: 10rem;
     }
   }
   
@@ -60,15 +88,18 @@ body {
     body {
       margin: 0 60px;
     }
+
+    .photo-me {
+        margin-top: 2rem;
+    }
   }
-  
+
   /* Small screens */
   @media (max-width: 767px) {
     body {
       margin: 0 10px;
     }
   }
-  
 
 /* Styling for the navbar */
 
@@ -96,6 +127,7 @@ body {
   /* Add an active class to highlight the current page */
   .topnav a.active {
     pointer-events: none;
+    text-decoration:underline;
   }
   
   /* Hide the link that should open and close the topnav on small screens */
