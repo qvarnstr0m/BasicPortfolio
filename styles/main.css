@@ -1,12 +1,45 @@
 /* main.css */
+html, body {
+    height: 100%;
+} 
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color:#3b3b3b;
     font-family: 'Raleway', sans-serif;
     color: #dddddd;
 }
 
+/* Footer section to stick to bottom of pages */
+main {
+    flex: 1;
+}
+
+footer {
+    flex-shrink: 0;
+    margin-bottom: 1rem;
+}
+
+.footer-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+li {
+    margin-right: 1rem; /* optional spacing between items */
+  }
+
+/* Set style for <a> tags*/
 a {
     color: #dddddd;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 /* Set responsive margins */
@@ -17,6 +50,7 @@ body {
   /* Large screens */
   @media (min-width: 1200px) {
     body {
+      height: 100%;
       margin: 0 200px;
     }
   }
@@ -38,9 +72,8 @@ body {
 
 /* Styling for the navbar */
 
-/* Add a black background color to the top navigation */
 .topnav {
-    margin-top: 1rem;
+    margin-top: 2rem;
     overflow: hidden;
   }
   
@@ -50,7 +83,7 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding-right: 2rem;
     text-decoration: none;
     font-size: 17px;
   }
