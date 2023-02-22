@@ -6,7 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color:#3b3b3b;
+    background-color:#242424;
     font-family: 'Raleway', sans-serif;
     color: #dddddd;
 }
@@ -18,6 +18,7 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 2rem;
+    justify-content: space-between;
 }
 
 /* Main text stylings */
@@ -44,7 +45,8 @@ footer {
 }
 
 li {
-    margin-right: 1rem; /* optional spacing between items */
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
 
 /* Set style for <a> tags*/
@@ -58,12 +60,29 @@ a:hover {
 }
 
 /* Styling for main photo */
-.photo-me {
+.photo-me { 
     border-radius: 5%;
-    margin-left: 2rem;
-    margin-top: 2rem;
-    max-width: 20rem;
-    height: auto;
+}
+
+/* Set styles for row and column combinations */
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.two-columns {
+  width: 45%;
+}
+
+/* Set custom styles for images */
+.two-columns img {
+  max-width: 90%;
+  height: auto;
+}
+
+/* Set list styles */
+.experience-list {
+  list-style: square;
 }
 
 /* Set responsive css styles */
@@ -71,35 +90,88 @@ body {
     margin: 0;
   }
   
-  /* Large screens */
-  @media (min-width: 1200px) {
-    body {
-      height: 100%;
-      margin: 0 150px;
-    }
+/* Extra large screens */
+@media (min-width: 1920px) {
+  body {
+    height: 100%;
+    margin: 0 20rem;
+  }
 
-    .photo-me {
-        margin-left: 10rem;
-    }
+  .photo-me { 
+    float: right;
+}
+}
+
+/* Large screens */
+@media (max-width: 1919px) and (min-width: 1280px) {
+  body {
+    margin: 0 16rem;
+  }
+
+  .photo-me { 
+    float: right;
+}
+}
+
+/* Medium screens */
+@media (max-width: 1279px) and (min-width: 960px) {
+  body {
+    margin: 0 10rem;
+  }
+}
+
+/* Small screens */
+@media (max-width: 959px) and (min-width: 601px){
+  body {
+    margin: 0 4rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .two-columns {
+    width: 100%;
+  }
+
+  .photo-me {
+    max-width: 100%;
+  }
+
+  .two-columns img {
+    width: 100% !important;
+    height: auto !important;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 600px) {
+  body {
+    margin: 0 2rem;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .two-columns {
+    width: 100%;
+  }
+
+  .two-columns img {
+    width: 100% !important;
+    height: auto !important;
+  }
+
+  .order-1 {
+    order: 1;
   }
   
-  /* Medium screens */
-  @media (max-width: 1199px) and (min-width: 768px) {
-    body {
-      margin: 0 60px;
-    }
-
-    .photo-me {
-        margin-top: 2rem;
-    }
+  .order-2 {
+    order: 2;
   }
+}
 
-  /* Small screens */
-  @media (max-width: 767px) {
-    body {
-      margin: 0 10px;
-    }
-  }
 
 /* Styling for the navbar */
 
