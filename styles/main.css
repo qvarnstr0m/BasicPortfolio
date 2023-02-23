@@ -64,6 +64,11 @@ a:hover {
     border-radius: 5%;
 }
 
+/* Set styles for header text */
+.header-text {
+  width: 100%;
+}
+
 /* Set styles for row and column combinations */
 .row {
   display: flex;
@@ -85,6 +90,16 @@ a:hover {
   list-style: square;
 }
 
+/* Set values for project containers */
+.project-container {
+  border:1px solid #f2f2f2;
+  border-radius: 0.5rem;
+  min-width: 10rem;
+  max-width: 20rem;
+  height: auto;
+  padding: 0.7rem;
+}
+
 /* Set responsive css styles */
 body {
     margin: 0;
@@ -104,7 +119,7 @@ body {
 /* Large screens */
 @media (max-width: 1919px) and (min-width: 1280px) {
   body {
-    margin: 0 20%;
+    margin: 0 15%;
   }
 
   .photo-me { 
