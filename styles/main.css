@@ -93,8 +93,7 @@ body {
 /* Extra large screens */
 @media (min-width: 1920px) {
   body {
-    height: 100%;
-    margin: 0 20rem;
+    margin: 0 20%;
   }
 
   .photo-me { 
@@ -105,7 +104,7 @@ body {
 /* Large screens */
 @media (max-width: 1919px) and (min-width: 1280px) {
   body {
-    margin: 0 16rem;
+    margin: 0 20%;
   }
 
   .photo-me { 
@@ -116,14 +115,14 @@ body {
 /* Medium screens */
 @media (max-width: 1279px) and (min-width: 960px) {
   body {
-    margin: 0 10rem;
+    margin: 0 15%;
   }
 }
 
 /* Small screens */
 @media (max-width: 959px) and (min-width: 601px){
   body {
-    margin: 0 4rem;
+    margin: 0 10%;
   }
 
   .row {
@@ -142,12 +141,20 @@ body {
     width: 100% !important;
     height: auto !important;
   }
+
+  .order-1 {
+    order: 1;
+  }
+  
+  .order-2 {
+    order: 2;
+  }
 }
 
 /* Extra small screens */
 @media (max-width: 600px) {
   body {
-    margin: 0 2rem;
+    margin: 0 5%;
   }
 
   .row {
