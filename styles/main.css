@@ -71,8 +71,11 @@ a:hover {
 
 /* Set styles for row and column combinations */
 .row {
+  width: 100%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .two-columns {
@@ -94,10 +97,10 @@ a:hover {
 .project-container {
   border:1px solid #f2f2f2;
   border-radius: 0.5rem;
-  min-width: 10rem;
-  max-width: 20rem;
+  width: 18rem;
   height: auto;
   padding: 0.7rem;
+  margin-bottom: 2rem;
 }
 
 /* Set responsive css styles */
