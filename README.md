@@ -1,2 +1,3 @@
 # Basic Portfolio  
-Using HTML, CSS, JS
+Using HTML, CSS, JS  
+School project
