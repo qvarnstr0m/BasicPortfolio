@@ -54,11 +54,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Styling for main photo */
-.photo-me { 
-    border-radius: 5%;
-}
-
 /* Set styles for header text */
 .header-text {
   width: 100%;
@@ -81,65 +76,6 @@ a:hover {
 .two-columns img {
   max-width: 90%;
   height: auto;
-}
-
-/* Set list styles */
-.experience-list {
-  list-style: square;
-}
-
-/* Set values for project containers */
-.project-container {
-  background-repeat: no-repeat;
-  background-position: 15rem -1rem;
-  background-size: contain;
-  border:1px solid #f2f2f2;
-  border-radius: 0.5rem;
-  width: 19rem;
-  height: 5rem;
-  padding: 0.7rem;
-  margin-bottom: 2rem;
-}
-
-#react-project {
-  background-image: url("../assets/reactlogo.png");
-  background-size: 10rem;
-  background-position: 13rem -1rem;
-}
-
-#kattis-project {
-  background-image: url("../assets/csharplogo.png");
-  background-size: 8rem;
-  background-position: 13rem -1rem;
-}
-
-#usingef-project {
-  background-image: url("../assets/eflogo.svg");
-  background-size: 12rem;
-  background-position: 13rem -0.5rem;
-}
-
-#discord-project {
-  background-image: url("../assets/discordlogo.svg");
-}
-
-#gittyup-project {
-  background-image: url("../assets/jslogo.png");
-}
-
-.project-header {
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-}
-
-.project-text {
-  max-width: 12.5rem;
-  font-family: Courier, monospace;
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-  margin-bottom: 0rem;
 }
 
 /* Set responsive css styles */
