@@ -1,0 +1,8 @@
+/* Adjust for print */
+nav, footer {
+    display: none !important;
+  }
+
+  body {
+    font-family: 'Times New Roman', Times, serif !important;
+  }
