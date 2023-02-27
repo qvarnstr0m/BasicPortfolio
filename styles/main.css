@@ -7,7 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color:#242424;
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Raleway', 'Inter', sans-serif;
     color: #dddddd;
 }
 
@@ -71,7 +71,6 @@ p {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 1rem;
 }
 
 .two-columns {
