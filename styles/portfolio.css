@@ -1,8 +1,8 @@
 /* Set values for project containers */
 .project-container {
     background-repeat: no-repeat;
-    background-position: 15rem -1rem;
-    background-size: contain;
+    background-position: 15rem 0.5rem;
+    background-size: 5rem;
     border:1px solid #f2f2f2;
     border-radius: 0.5rem;
     width: 19rem;
@@ -31,20 +31,18 @@
 /* Set values for project icons */
   #react-project {
     background-image: url("../assets/reactlogo.png");
-    background-size: 10rem;
-    background-position: 13rem -1rem;
+    background-position: 15rem 0.5rem;
   }
   
   #kattis-project {
     background-image: url("../assets/csharplogo.png");
-    background-size: 8rem;
-    background-position: 13rem -1rem;
+    background-position: 15rem 0.4rem;
   }
   
   #usingef-project {
     background-image: url("../assets/eflogo.svg");
-    background-size: 12rem;
-    background-position: 13rem -0.5rem;
+    background-size: 6.5rem;
+    background-position: 13.5rem 1rem;
   }
   
   #discord-project {
@@ -53,6 +51,8 @@
   
   #gittyup-project {
     background-image: url("../assets/jslogo.png");
+    background-position: 15rem 0rem;
+    background-size: 5.5rem;
   }
 
   /* Modal window */

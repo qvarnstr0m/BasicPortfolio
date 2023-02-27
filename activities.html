@@ -14,6 +14,7 @@
 
     <!-- Import the main.css file -->
     <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/activities.css">
     
     <!-- Import the print.css file for print styles -->
     <link rel="stylesheet" href="/styles/print.css" media="print">
@@ -34,7 +35,7 @@
             <a href="./about.html">About</a>
             <a href="./portfolio.html">Portfolio</a>
             <a href="./cv.html">CV</a>
-            <a href="./blog.html" class="active">Blog</a>
+            <a href="./activities.html" class="active">Activities</a>
             <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
               <i class="fa fa-bars"></i>
             </a>
@@ -43,7 +44,21 @@
 
     <!-- Main section -->
     <main>
-
+        <div>
+            <h1>Github activities ⚙️</h1>
+        </div>
+        <div class="row">
+            <div class="two-columns">
+                <p>
+                    This is a demo page for the <a href="https://www.github.com/qvarnstr0m/GittyUp/" target="_blank" rel="noopener noreferrer">GittyUp plugin</a>. 
+                    It uses the GittyUp library to fetch data from my Github account and render it on this page. It is a lightweight JS plugin without any dependencies.
+                </p>
+                <ul id="events" class="experience-list"></ul>
+            </div>
+            <div class="two-columns">
+                
+            </div>
+        </div>
     </main>
 
     <!-- Filler section -->
@@ -63,5 +78,7 @@
 
     <!-- Import js scripts -->
     <script src="/js/navbar.js"></script>
+    <script src="./js/gittyup-get.js" type="module"></script>
+    <script src="./js/gittyup-render.js" type="module"></script>
 </body>
 </html>
