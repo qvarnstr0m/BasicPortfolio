@@ -1,147 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>Martin Qvarnström</title>
-    <link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-    <meta name="description" content="Martin Qvarnström, developing .NET, JS, CSS, React and more.">
-    <meta name="keywords" content="developer, .NET, JS, Qvarnström, Martin">
-    <meta name="author" content="Martin Qvarnström">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="index, follow">
-    <meta name="googlebot" content="index, follow">
-    <meta name="theme-color" content="#FFFFFF">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+    <meta
+      name="description"
+      content="Martin Qvarnström, developing .NET, JS, CSS, React and more."
+    />
+    <meta name="keywords" content="developer, .NET, JS, Qvarnström, Martin" />
+    <meta name="author" content="Martin Qvarnström" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+    <meta name="theme-color" content="#FFFFFF" />
 
     <!-- Import the main.css file -->
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/cv.css">
-    
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/cv.css" />
+
     <!-- Import the print.css file for print styles -->
-    <link rel="stylesheet" href="/styles/print.css" media="print">
+    <link rel="stylesheet" href="/styles/print.css" media="print" />
 
     <!-- Import Google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-<body>
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <!-- Navbar section -->
     <nav>
-        <div class="topnav" id="myTopnav">
-            <a href="./index.html">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./portfolio.html">Portfolio</a>
-            <a href="./cv.html" class="active">CV</a>
-            <a href="./activities.html">Activities</a>
-            <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
-              <i class="fa fa-bars"></i>
-            </a>
-        </div>
+      <div class="topnav" id="myTopnav">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./cv.html" class="active">CV</a>
+        <a href="./activities.html">Activities</a>
+        <a href="javascript:void(0);" class="icon" onclick="navbarFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     </nav>
 
     <!-- Main section -->
     <main>
-
-        <div>
-            <h1>CV 📄</h1>
+      <div>
+        <h1>CV 📄</h1>
+      </div>
+      <div class="row">
+        <div class="two-columns">
+          <h2 id="name"></h2>
+          <h3 id="title"></h3>
+          <p id="contactinfo"></p>
+          <hr />
+          <h2>Education</h2>
+          <div id="education"></div>
+          <hr />
+          <h2>Other experiences</h2>
+          <div id="other"></div>
+          <hr />
         </div>
-        <div class="row">
-            <div class="two-columns">
-                <h2>Martin Qvarnström</h2>
-                <h3>.NET System Development Student</h3>
-                <p>
-                    📧 <a href="mailto:mqvarnstrom80@gmail.com?subject=Hello!">mqvarnstrom80@gmail.com</a><br />
-                    📞 <a href="tel:+4670-2027161">+4670-2027161</a><br />
-                    🌐 <a href="https://www.github.com/qvarnstr0m" target="_blank" rel="noopener noreferrer">github.com/qvarnstr0m</a><br />
-                    
-                </p>
-                <hr />
-                <h2>Education</h2>
-                <p>
-                    System Development .NET<br />
-                    sept. 2022 - present<br />
-                    Higher vocational education with focus on the .NET platform. Courses on C#, Object 
-                    oriented programming, advanced .NET, agile work methods and more.
-                </p>
-                <p>
-                    Web Development<br />
-                    2001-2002<br />
-                    Vocational education with focus on web development. Including courses on HTML, CSS 
-                    and JavaScript.
-                </p>
-                <hr />
-                <h2>Other experiences</h2>
-                <p>Web Administrator<br />
-                    <a href="https://www.harvards.se" target="_blank" rel="noopener noreferrer">Salong Harvards</a><br />
-                    2018-currently<br />
-                    Updating on content and design matters.
-                </p>
-                <p>Board member<br />
-                    Tröinge Park D BRF<br />
-                    2019-2021<br />
-                    Attended board meetings and participated in discussions on matters related to the 
-                    cooperative's management. Made decisions on behalf of the members of the cooperative, 
-                    including financial decisions, maintenance and repairs, and other matters that affect 
-                    the daily operation of the building.
-                </p>
-                <p>Military Service<br />
-                    Halmstad IB16<br />
-                    1999-2000<br />
-                    Responsible for preparing and serving meals to soldiers and other military 
-                    personnel in various locations and environments.
-                </p>
-                <hr />
-            </div>
-            <div class="two-columns">
-                <h2>Professional experience</h2>
-                <p>Truck driver<br />
-                    Per-Åkes Åkeri<br />
-                    2008-2022<br />
-                    Responsible for transporting wood products such as lumber, plywood, and other wooden 
-                    materials from one location to another. Including loading and unloading cargo, 
-                    performing safety inspections on the truck and its contents, following traffic laws 
-                    and safety regulations, and ensuring timely delivery of goods. Additionally, also 
-                    responsible for maintaining and repairing the truck as needed.
-                </p>
-                <p>Planing mill sorter / inspector<br />
-                    Stigma Hyvleri<br />
-                    2005-2008<br />
-                    Responsible for sorting, grading, and inspecting wood products that had been processed 
-                    through a planing mill: lumber, paneling, and other wood products. Also responsible for
-                    some service and repair.
-                </p>
-                <p>Line Chef<br />
-                    Restaurant Hertigen etc.<br />
-                    2000-2005<br />
-                    Responsible for preparing and cooking food to order in several restaurant kitchens. 
-                    Under the supervision of the head chefs, I ensured that dishes were prepared to the 
-                    highest standards of quality and consistency. I worked collaboratively with other 
-                    kitchen staff in a team environment to ensure that orders were completed accurately 
-                    and efficiently.
-                </p>
-            </div>
+        <div class="two-columns">
+          <h2>Professional experience</h2>
+          <div id="work"></div>
         </div>
+      </div>
     </main>
 
     <!-- Filler section -->
-    <div class="filler-section">
-
-    </div>
+    <div class="filler-section"></div>
 
     <!-- Footer section -->
     <footer>
-        <ul class="footer-links">
-            <li><a href="mailto:mqvarnstrom80@gmail.com?subject=Hello!">Email</a></li>
-            <li><a href="https://www.github.com/qvarnstr0m/" target="_blank" rel="noopener noreferrer">Github</a></li>
-            <li><a href="https://www.linkedin.com/in/martin-qvarnstrom-953275248/" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-            <li><a href="./wcag.html">WCAG</a></li>
-        </ul>
+      <ul class="footer-links">
+        <li>
+          <a href="mailto:mqvarnstrom80@gmail.com?subject=Hello!">Email</a>
+        </li>
+        <li>
+          <a
+            href="https://www.github.com/qvarnstr0m/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Github</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/martin-qvarnstrom-953275248/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Linkedin</a
+          >
+        </li>
+        <li><a href="./wcag.html">WCAG</a></li>
+      </ul>
     </footer>
 
     <!-- Import js scripts -->
     <script src="/js/navbar.js"></script>
-</body>
+    <script src="/js/rendercv.js"></script>
+  </body>
 </html>
